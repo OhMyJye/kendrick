@@ -1,0 +1,193 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
+   font-size:16px;
+}
+
+img,
+iframe {
+max-width: 100%;
+height: auto;
+/* so that aspect ratio is kept even if height is declared in markup */ 
+border: 0;
+/* this stops a border if the image is inside a link */
+}
+
+/* This is a CSS comment.
+Always comment your work to explain what you're doing */ 
+body {
+font-family: arial, sans-serif;
+}
+
+/*
+background color defaults
+Note that HTML and CSS use American spelling (color not colour). */
+body {
+      background-image: url("TPAB-Background.png");
+     }
+header {
+       background-image: url("TPAB-Background.png");
+       }
+/* Note that if we want a number of different elements to have the same style, we just comma separate them. */
+header, footer {
+               text-align: center;
+               }
+
+/* TYPOGRAPHY*/
+h1 {
+    font-size:50px;
+    color: #fff; /* white */
+    text-transform: uppercase;
+   } 
+h2 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif; 
+    text-transform: uppercase;
+	text-align-last: center
+		
+   }
+h3 {
+	font-size: 20px;
+    font-family: 'Lato', sans-serif; 
+    text-transform: uppercase;
+	text-align-last: center;
+		
+   }
+li {
+	font-size: 20px;
+    font-family: 'Lato', sans-serif; 
+    text-transform: uppercase;
+	text-align-last: center;
+}
+blockquote  {
+    font-size: 30px;
+	font-weight: bold;
+   }
+
+
+.item {
+       background-color: #FFFFFF;
+	   background: rgba(255, 255, 255, 0.8);
+       padding:1%;
+       margin:1%; 
+       margin-bottom: 40px; 
+       margin-top: 20px;
+	   border-width: thick;
+       border-radius: 0px;
+	   border-color: #060606;
+	  font-size: 30px;
+	outline: 5px solid rgba(0, 0, 0, .9);
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	color: black;
+	text-align-last: center;
+
+
+	
+	
+	
+}
+/* let's bring the width in a little */
+/* check it out - we're responsive without even trying! */ 
+main {
+/* There's rarely any time you should set an explicit width. Always use max-width wherever possible. */
+     max-width: 1000px;
+/* Change the above to width: 1000px and see what happens with responsive */
+     margin-left: auto;
+     margin-right: auto; 
+      }
+
+/* let's talk about nesting */ 
+.item li {
+          margin-left: 25px;
+}
+blockquote {
+text-transform: uppercase; 
+font-style: italic;
+}
+
+
+nav {
+text-align: center;
+}
+nav li {
+display: inline-block;
+}
+/* nav li a, or nav a ?? */ nav a {
+background: white; 
+background: rgba(255, 255, 255, 0.8);
+color: black;
+padding: 5px;
+margin-right: 10px;
+text-decoration: none; 
+border-radius: 0px;
+outline: 3px solid rgba(0, 0, 0, .9);
+}
+nav a:hover {
+background-color: #A8A8A8;
+}
+body {
+background-color: black;
+background-image: url("TPAB-Background.png"); 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+
+.mmbs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.copyright {
+    font-size: 25px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	color: white;
+	text-align-last: center
+}
+
+.mmbs2 {
+    font-size: 25px;
+   font-family: 'Cormorant Garamond', serif; 
+	color: black;
+	text-align-last: center;
+}
+ul {
+    list-style-type: none;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+	
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.05);
+}
+
+
+
